@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springDemo
+  name: springdemo-app
   labels:
-    app: springDemo
+    app: springdemo-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: springDemo
+      app: springdemo-app
   template:
     metadata:
       labels:
-        app: springDemo
+        app: springdemo-app
     spec:
       containers:
-        - name: springDemo
+        - name: springdemo-app
           image: 23hamid/springdemo-app:latest
           ports:
             - containerPort: 8080

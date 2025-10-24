@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: springDemo
+  name: springdemo-app
 spec:
   selector:
-    app: springDemo
+    app: springdemo-app
   ports:
     - protocol: TCP
       port: 80
